@@ -15,7 +15,6 @@ public class RestTestServer {
 	}
 	
 	public void start() throws Exception {
-
 		if (server == null) {
 			server = new Server(TEST_PORT);
 			server.setHandler(getContext());
@@ -40,4 +39,5 @@ public class RestTestServer {
 			server = null;
 		}
 	}
+	
 }
